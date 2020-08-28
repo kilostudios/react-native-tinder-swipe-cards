@@ -169,9 +169,6 @@ export default class SwipeCards extends Component {
       },
 
       onPanResponderGrant: (e, gestureState) => {
-        if(this.props.locked){
-          return false;
-        }
         this.state.pan.setOffset({ x: this.state.pan.x._value, y: this.state.pan.y._value });
         this.state.pan.setValue({ x: 0, y: 0 });
       },
@@ -183,9 +180,6 @@ export default class SwipeCards extends Component {
       ]),
 
       onPanResponderRelease: (e, {vx, vy, dx, dy}) => {
-        if(this.props.locked){
-          return false;
-        }
         this.props.onDragRelease()
         this.state.pan.flattenOffset();
         let velocity;
