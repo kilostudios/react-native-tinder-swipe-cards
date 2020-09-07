@@ -284,10 +284,16 @@ const styles = StyleSheet.create({
 | cardRemoved       | Function | A callback passing the card reference that just got removed |              |
 | onClickHandler    | Function | A callback clicking the card                                 | alert('tap')|
 | locked            | Boolean  | Lock the card from swiping                                  | false        |
-
+| onRef             | Object   | Assign the component to a variable to access functions       |             |
 
 
 *required
+
+### Functions (Access with onRef prop)
+| function           | effect                           |
+| _forceRightSwipe() | Swipes right on the current card |
+| _forceLeftSwipe()  | Swipes left on the current card  |
+| _forceUpSwipe()    | Swipes up on the current card    |
 
 ### Todo (PRs welcome!)
 - [ ] Show next card underneath current card
