@@ -291,6 +291,7 @@ const styles = StyleSheet.create({
 
 ### Functions (Access with onRef prop)
 | function           | effect                           |
+|--------------------|----------------------------------|
 | _forceRightSwipe() | Swipes right on the current card |
 | _forceLeftSwipe()  | Swipes left on the current card  |
 | _forceUpSwipe()    | Swipes up on the current card    |
